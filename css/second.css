@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Unbounded", serif;
+    font-weight: 400;
+    color: #F7F5F3;
+    line-height: 30px;
+    background-color: #211D1A;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 35px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header nav{
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #F7F5F3;
+    transition: all 250ms ease;
+}
+
+header nav ul li:not(.active) a:hover {
+    color: #FDA854;
+    transition: all 250ms ease;
+}
+
+header nav ul li.active a {
+    color: #FDA854;
+}
+
+.hero {
+    padding-bottom: 100px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero--info {
+    width: 630px;
+    padding-top: 150px;
+}
+
+.hero--info h1{
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.orange-text {
+    color: #FDA854;
+}
+
+.hero--info p{
+    color: #D1C2B1;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.hero--info .btn-play {
+    background: #FDA854;
+    color: #F7F5F3;
+    border-radius: 15px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 250ms ease;
+    width: 260px;
+    height: 60px;
+    font-family: "Unbounded", serif;
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+.hero--info .btn-play:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background: #e09345;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero--info .btn-ip {
+    background: #211D1A;
+    color: #F7F5F3;
+    border-radius: 15px;
+    padding: 15px 30px;
+    border: 1px solid #D1C2B1;
+    transition: all 250ms ease;
+    width: 260px;
+    height: 60px;
+    font-family: "Unbounded", serif;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+#copyButton {
+    transition: all 0.5s ease; /* Плавный переход для всех свойств */
+}
+
+.hero--info .btn-ip:hover {
+    background: #2e2924;
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero img {
+    position: absolute;
+    top: 50px;
+    right: -100px;
+}
+
+.numbers {
+    padding-top: 150px;
+    width: 1400px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.numbers .orange-text {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card {
+    padding-top: 150px;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cards {
+    padding-top: 100px;
+    line-height: 30px;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards div {
+    padding-top: 32px;
+    background: linear-gradient(180deg, rgba(23,20,18,1) 0%, rgba(33,29,26,1) 80%);
+    width: 360px;
+    height: 350px;
+    border-radius: 30px;
+    transition: all 250ms ease;
+}
+
+.cards div:hover {
+    transform: translateY(-10px);
+}
+
+.cards div p {
+    top: 10px;
+    font-size: 20px;
+}
+
+.cards div .card-text {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.footer {
+    display: flex;
+    background-color: #211D1A;
+    padding: 20px;
+    color: #F7F5F3;
+    justify-content: space-evenly
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.footer-brand {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 30px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-section h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #FDA854;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #F7F5F3;
+    font-size: 14px;
+    transition: all 250ms ease;
+}
+
+.footer-section a:hover {
+    color: #FDA854;
+    transition: all 250ms ease;
+}
